@@ -1,0 +1,710 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Users\meghn\AppData\Roaming\npm\node_modules\npm\bin\npm-cli.js
+1 info using npm@11.0.0
+2 info using node@v22.13.1
+3 silly config load:file:C:\Users\meghn\AppData\Roaming\npm\node_modules\npm\npmrc
+4 silly config load:file:C:\Users\meghn\.npmrc
+5 silly config load:file:C:\Users\meghn\AppData\Roaming\npm\etc\npmrc
+6 verbose title npm exec create-react-app frontend
+7 verbose argv "exec" "--" "create-react-app" "frontend"
+8 verbose logfile logs-max:10 dir:C:\Users\meghn\Desktop\TeamTaskManager\%LOCALAPPDATA%\npm-cache\_logs\2026-05-20T07_56_53_591Z-
+9 verbose logfile C:\Users\meghn\Desktop\TeamTaskManager\%LOCALAPPDATA%\npm-cache\_logs\2026-05-20T07_56_53_591Z-debug-0.log
+10 silly logfile done cleaning log files
+11 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+12 http fetch GET 200 https://registry.npmjs.org/create-react-app 444ms (cache miss)
+13 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+14 http fetch GET 200 https://registry.npmjs.org/npm 960ms
+15 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+16 silly idealTree buildDeps
+17 silly fetch manifest create-react-app@5.1.0
+18 silly packumentCache full:https://registry.npmjs.org/create-react-app cache-miss
+19 http fetch GET 200 https://registry.npmjs.org/create-react-app 163ms (cache miss)
+20 silly packumentCache full:https://registry.npmjs.org/create-react-app set size:undefined disposed:false
+21 silly placeDep ROOT create-react-app@5.1.0 OK for:  want: 5.1.0
+22 silly fetch manifest tmp@^0.2.1
+23 silly packumentCache full:https://registry.npmjs.org/tmp cache-miss
+24 silly fetch manifest chalk@^4.1.2
+25 silly packumentCache full:https://registry.npmjs.org/chalk cache-miss
+26 silly fetch manifest semver@^7.3.5
+27 silly packumentCache full:https://registry.npmjs.org/semver cache-miss
+28 silly fetch manifest envinfo@^7.8.1
+29 silly packumentCache full:https://registry.npmjs.org/envinfo cache-miss
+30 silly fetch manifest prompts@^2.4.2
+31 silly packumentCache full:https://registry.npmjs.org/prompts cache-miss
+32 silly fetch manifest fs-extra@^10.0.0
+33 silly packumentCache full:https://registry.npmjs.org/fs-extra cache-miss
+34 silly fetch manifest tar-pack@^3.4.1
+35 silly packumentCache full:https://registry.npmjs.org/tar-pack cache-miss
+36 silly fetch manifest commander@^4.1.1
+37 silly packumentCache full:https://registry.npmjs.org/commander cache-miss
+38 silly fetch manifest hyperquest@^2.1.3
+39 silly packumentCache full:https://registry.npmjs.org/hyperquest cache-miss
+40 silly fetch manifest cross-spawn@^7.0.3
+41 silly packumentCache full:https://registry.npmjs.org/cross-spawn cache-miss
+42 silly fetch manifest validate-npm-package-name@^3.0.0
+43 silly packumentCache full:https://registry.npmjs.org/validate-npm-package-name cache-miss
+44 http fetch GET 200 https://registry.npmjs.org/tmp 182ms (cache miss)
+45 silly packumentCache full:https://registry.npmjs.org/tmp set size:undefined disposed:false
+46 http fetch GET 200 https://registry.npmjs.org/chalk 187ms (cache miss)
+47 silly packumentCache full:https://registry.npmjs.org/chalk set size:undefined disposed:false
+48 http fetch GET 200 https://registry.npmjs.org/envinfo 558ms (cache miss)
+49 silly packumentCache full:https://registry.npmjs.org/envinfo set size:undefined disposed:false
+50 http fetch GET 200 https://registry.npmjs.org/tar-pack 583ms (cache miss)
+51 silly packumentCache full:https://registry.npmjs.org/tar-pack set size:undefined disposed:false
+52 http fetch GET 200 https://registry.npmjs.org/hyperquest 607ms (cache miss)
+53 silly packumentCache full:https://registry.npmjs.org/hyperquest set size:undefined disposed:false
+54 http fetch GET 200 https://registry.npmjs.org/validate-npm-package-name 613ms (cache miss)
+55 silly packumentCache full:https://registry.npmjs.org/validate-npm-package-name set size:undefined disposed:false
+56 http fetch GET 200 https://registry.npmjs.org/prompts 661ms (cache miss)
+57 silly packumentCache full:https://registry.npmjs.org/prompts set size:undefined disposed:false
+58 http fetch GET 200 https://registry.npmjs.org/cross-spawn 673ms (cache miss)
+59 silly packumentCache full:https://registry.npmjs.org/cross-spawn set size:undefined disposed:false
+60 http fetch GET 200 https://registry.npmjs.org/fs-extra 681ms (cache miss)
+61 silly packumentCache full:https://registry.npmjs.org/fs-extra set size:undefined disposed:false
+62 http fetch GET 200 https://registry.npmjs.org/semver 693ms (cache miss)
+63 silly packumentCache full:https://registry.npmjs.org/semver set size:undefined disposed:false
+64 http fetch GET 200 https://registry.npmjs.org/commander 755ms (cache miss)
+65 silly packumentCache full:https://registry.npmjs.org/commander set size:undefined disposed:false
+66 silly placeDep ROOT chalk@4.1.2 OK for: create-react-app@5.1.0 want: ^4.1.2
+67 silly placeDep ROOT commander@4.1.1 OK for: create-react-app@5.1.0 want: ^4.1.1
+68 silly placeDep ROOT cross-spawn@7.0.6 OK for: create-react-app@5.1.0 want: ^7.0.3
+69 silly placeDep ROOT envinfo@7.21.0 OK for: create-react-app@5.1.0 want: ^7.8.1
+70 silly placeDep ROOT fs-extra@10.1.0 OK for: create-react-app@5.1.0 want: ^10.0.0
+71 silly placeDep ROOT hyperquest@2.1.3 OK for: create-react-app@5.1.0 want: ^2.1.3
+72 silly placeDep ROOT prompts@2.4.2 OK for: create-react-app@5.1.0 want: ^2.4.2
+73 silly placeDep ROOT semver@7.8.0 OK for: create-react-app@5.1.0 want: ^7.3.5
+74 silly placeDep ROOT tar-pack@3.4.1 OK for: create-react-app@5.1.0 want: ^3.4.1
+75 silly placeDep ROOT tmp@0.2.5 OK for: create-react-app@5.1.0 want: ^0.2.1
+76 silly placeDep ROOT validate-npm-package-name@3.0.0 OK for: create-react-app@5.1.0 want: ^3.0.0
+77 silly fetch manifest ansi-styles@^4.1.0
+78 silly packumentCache full:https://registry.npmjs.org/ansi-styles cache-miss
+79 silly fetch manifest supports-color@^7.1.0
+80 silly packumentCache full:https://registry.npmjs.org/supports-color cache-miss
+81 silly fetch manifest which@^2.0.1
+82 silly packumentCache full:https://registry.npmjs.org/which cache-miss
+83 silly fetch manifest path-key@^3.1.0
+84 silly packumentCache full:https://registry.npmjs.org/path-key cache-miss
+85 silly fetch manifest shebang-command@^2.0.0
+86 silly packumentCache full:https://registry.npmjs.org/shebang-command cache-miss
+87 silly fetch manifest jsonfile@^6.0.1
+88 silly packumentCache full:https://registry.npmjs.org/jsonfile cache-miss
+89 silly fetch manifest graceful-fs@^4.2.0
+90 silly packumentCache full:https://registry.npmjs.org/graceful-fs cache-miss
+91 silly fetch manifest universalify@^2.0.0
+92 silly packumentCache full:https://registry.npmjs.org/universalify cache-miss
+93 silly fetch manifest buffer-from@^0.1.1
+94 silly packumentCache full:https://registry.npmjs.org/buffer-from cache-miss
+95 silly fetch manifest duplexer2@~0.0.2
+96 silly packumentCache full:https://registry.npmjs.org/duplexer2 cache-miss
+97 silly fetch manifest through2@~0.6.3
+98 silly packumentCache full:https://registry.npmjs.org/through2 cache-miss
+99 http fetch GET 200 https://registry.npmjs.org/which 178ms (cache miss)
+100 silly packumentCache full:https://registry.npmjs.org/which set size:undefined disposed:false
+101 silly fetch manifest kleur@^3.0.3
+102 silly packumentCache full:https://registry.npmjs.org/kleur cache-miss
+103 http fetch GET 200 https://registry.npmjs.org/path-key 181ms (cache miss)
+104 silly packumentCache full:https://registry.npmjs.org/path-key set size:undefined disposed:false
+105 silly fetch manifest sisteransi@^1.0.5
+106 silly packumentCache full:https://registry.npmjs.org/sisteransi cache-miss
+107 http fetch GET 200 https://registry.npmjs.org/shebang-command 183ms (cache miss)
+108 silly packumentCache full:https://registry.npmjs.org/shebang-command set size:undefined disposed:false
+109 silly fetch manifest debug@^2.2.0
+110 silly packumentCache full:https://registry.npmjs.org/debug cache-miss
+111 http fetch GET 200 https://registry.npmjs.org/duplexer2 187ms (cache miss)
+112 silly packumentCache full:https://registry.npmjs.org/duplexer2 set size:undefined disposed:false
+113 silly fetch manifest fstream@^1.0.10
+114 silly packumentCache full:https://registry.npmjs.org/fstream cache-miss
+115 http fetch GET 200 https://registry.npmjs.org/supports-color 191ms (cache miss)
+116 silly packumentCache full:https://registry.npmjs.org/supports-color set size:undefined disposed:false
+117 silly fetch manifest fstream-ignore@^1.0.5
+118 silly packumentCache full:https://registry.npmjs.org/fstream-ignore cache-miss
+119 http fetch GET 200 https://registry.npmjs.org/universalify 194ms (cache miss)
+120 silly packumentCache full:https://registry.npmjs.org/universalify set size:undefined disposed:false
+121 silly fetch manifest once@^1.3.3
+122 silly packumentCache full:https://registry.npmjs.org/once cache-miss
+123 http fetch GET 200 https://registry.npmjs.org/ansi-styles 203ms (cache miss)
+124 silly packumentCache full:https://registry.npmjs.org/ansi-styles set size:undefined disposed:false
+125 silly fetch manifest readable-stream@^2.1.4
+126 silly packumentCache full:https://registry.npmjs.org/readable-stream cache-miss
+127 http fetch GET 200 https://registry.npmjs.org/jsonfile 206ms (cache miss)
+128 silly packumentCache full:https://registry.npmjs.org/jsonfile set size:undefined disposed:false
+129 silly fetch manifest rimraf@^2.5.1
+130 silly packumentCache full:https://registry.npmjs.org/rimraf cache-miss
+131 http fetch GET 200 https://registry.npmjs.org/buffer-from 206ms (cache miss)
+132 silly packumentCache full:https://registry.npmjs.org/buffer-from set size:undefined disposed:false
+133 silly fetch manifest tar@^2.2.1
+134 silly packumentCache full:https://registry.npmjs.org/tar cache-miss
+135 http fetch GET 200 https://registry.npmjs.org/through2 207ms (cache miss)
+136 silly packumentCache full:https://registry.npmjs.org/through2 set size:undefined disposed:false
+137 silly fetch manifest uid-number@^0.0.6
+138 silly packumentCache full:https://registry.npmjs.org/uid-number cache-miss
+139 http fetch GET 200 https://registry.npmjs.org/graceful-fs 216ms (cache miss)
+140 silly packumentCache full:https://registry.npmjs.org/graceful-fs set size:undefined disposed:false
+141 silly fetch manifest builtins@^1.0.3
+142 silly packumentCache full:https://registry.npmjs.org/builtins cache-miss
+143 http fetch GET 200 https://registry.npmjs.org/sisteransi 140ms (cache miss)
+144 silly packumentCache full:https://registry.npmjs.org/sisteransi set size:undefined disposed:false
+145 http fetch GET 200 https://registry.npmjs.org/fstream-ignore 135ms (cache miss)
+146 silly packumentCache full:https://registry.npmjs.org/fstream-ignore set size:undefined disposed:false
+147 http fetch GET 200 https://registry.npmjs.org/fstream 140ms (cache miss)
+148 silly packumentCache full:https://registry.npmjs.org/fstream set size:undefined disposed:false
+149 http fetch GET 200 https://registry.npmjs.org/once 137ms (cache miss)
+150 silly packumentCache full:https://registry.npmjs.org/once set size:undefined disposed:false
+151 http fetch GET 200 https://registry.npmjs.org/kleur 156ms (cache miss)
+152 silly packumentCache full:https://registry.npmjs.org/kleur set size:undefined disposed:false
+153 http fetch GET 200 https://registry.npmjs.org/debug 160ms (cache miss)
+154 silly packumentCache full:https://registry.npmjs.org/debug set size:undefined disposed:false
+155 http fetch GET 200 https://registry.npmjs.org/builtins 141ms (cache miss)
+156 silly packumentCache full:https://registry.npmjs.org/builtins set size:undefined disposed:false
+157 http fetch GET 200 https://registry.npmjs.org/uid-number 150ms (cache miss)
+158 silly packumentCache full:https://registry.npmjs.org/uid-number set size:undefined disposed:false
+159 http fetch GET 200 https://registry.npmjs.org/readable-stream 158ms (cache miss)
+160 silly packumentCache full:https://registry.npmjs.org/readable-stream set size:undefined disposed:false
+161 http fetch GET 200 https://registry.npmjs.org/rimraf 325ms (cache miss)
+162 silly packumentCache full:https://registry.npmjs.org/rimraf set size:undefined disposed:false
+163 http fetch GET 200 https://registry.npmjs.org/tar 397ms (cache miss)
+164 silly packumentCache full:https://registry.npmjs.org/tar set size:undefined disposed:false
+165 silly placeDep ROOT ansi-styles@4.3.0 OK for: chalk@4.1.2 want: ^4.1.0
+166 silly placeDep ROOT supports-color@7.2.0 OK for: chalk@4.1.2 want: ^7.1.0
+167 silly fetch manifest color-convert@^2.0.1
+168 silly packumentCache full:https://registry.npmjs.org/color-convert cache-miss
+169 silly fetch manifest has-flag@^4.0.0
+170 silly packumentCache full:https://registry.npmjs.org/has-flag cache-miss
+171 http fetch GET 200 https://registry.npmjs.org/has-flag 121ms (cache miss)
+172 silly packumentCache full:https://registry.npmjs.org/has-flag set size:undefined disposed:false
+173 http fetch GET 200 https://registry.npmjs.org/color-convert 124ms (cache miss)
+174 silly packumentCache full:https://registry.npmjs.org/color-convert set size:undefined disposed:false
+175 silly placeDep ROOT color-convert@2.0.1 OK for: ansi-styles@4.3.0 want: ^2.0.1
+176 silly fetch manifest color-name@~1.1.4
+177 silly packumentCache full:https://registry.npmjs.org/color-name cache-miss
+178 http fetch GET 200 https://registry.npmjs.org/color-name 178ms (cache miss)
+179 silly packumentCache full:https://registry.npmjs.org/color-name set size:undefined disposed:false
+180 silly placeDep ROOT color-name@1.1.4 OK for: color-convert@2.0.1 want: ~1.1.4
+181 silly placeDep ROOT path-key@3.1.1 OK for: cross-spawn@7.0.6 want: ^3.1.0
+182 silly placeDep ROOT shebang-command@2.0.0 OK for: cross-spawn@7.0.6 want: ^2.0.0
+183 silly placeDep ROOT which@2.0.2 OK for: cross-spawn@7.0.6 want: ^2.0.1
+184 silly fetch manifest shebang-regex@^3.0.0
+185 silly packumentCache full:https://registry.npmjs.org/shebang-regex cache-miss
+186 silly fetch manifest isexe@^2.0.0
+187 silly packumentCache full:https://registry.npmjs.org/isexe cache-miss
+188 http fetch GET 200 https://registry.npmjs.org/shebang-regex 128ms (cache miss)
+189 silly packumentCache full:https://registry.npmjs.org/shebang-regex set size:undefined disposed:false
+190 http fetch GET 200 https://registry.npmjs.org/isexe 129ms (cache miss)
+191 silly packumentCache full:https://registry.npmjs.org/isexe set size:undefined disposed:false
+192 silly placeDep ROOT graceful-fs@4.2.11 OK for: fs-extra@10.1.0 want: ^4.2.0
+193 silly placeDep ROOT jsonfile@6.2.1 OK for: fs-extra@10.1.0 want: ^6.0.1
+194 silly placeDep ROOT universalify@2.0.1 OK for: fs-extra@10.1.0 want: ^2.0.0
+195 silly placeDep ROOT buffer-from@0.1.2 OK for: hyperquest@2.1.3 want: ^0.1.1
+196 silly placeDep ROOT duplexer2@0.0.2 OK for: hyperquest@2.1.3 want: ~0.0.2
+197 silly placeDep ROOT through2@0.6.5 OK for: hyperquest@2.1.3 want: ~0.6.3
+198 silly fetch manifest readable-stream@~1.1.9
+199 silly packumentCache full:https://registry.npmjs.org/readable-stream cache-miss
+200 silly fetch manifest xtend@>=4.0.0 <4.1.0-0
+201 silly packumentCache full:https://registry.npmjs.org/xtend cache-miss
+202 silly fetch manifest readable-stream@>=1.0.33-1 <1.1.0-0
+203 silly packumentCache full:https://registry.npmjs.org/readable-stream cache-miss
+204 http cache https://registry.npmjs.org/readable-stream 12ms (cache hit)
+205 silly packumentCache full:https://registry.npmjs.org/readable-stream set size:261096 disposed:false
+206 http cache https://registry.npmjs.org/readable-stream 18ms (cache hit)
+207 silly packumentCache full:https://registry.npmjs.org/readable-stream set size:261096 disposed:false
+208 silly packumentCache full:https://registry.npmjs.org/readable-stream dispose
+209 http fetch GET 200 https://registry.npmjs.org/xtend 143ms (cache miss)
+210 silly packumentCache full:https://registry.npmjs.org/xtend set size:undefined disposed:false
+211 silly placeDep ROOT readable-stream@1.1.14 OK for: duplexer2@0.0.2 want: ~1.1.9
+212 silly fetch manifest isarray@0.0.1
+213 silly packumentCache full:https://registry.npmjs.org/isarray cache-miss
+214 silly fetch manifest inherits@~2.0.1
+215 silly packumentCache full:https://registry.npmjs.org/inherits cache-miss
+216 silly fetch manifest core-util-is@~1.0.0
+217 silly packumentCache full:https://registry.npmjs.org/core-util-is cache-miss
+218 silly fetch manifest string_decoder@~0.10.x
+219 silly packumentCache full:https://registry.npmjs.org/string_decoder cache-miss
+220 http fetch GET 200 https://registry.npmjs.org/core-util-is 148ms (cache miss)
+221 silly packumentCache full:https://registry.npmjs.org/core-util-is set size:undefined disposed:false
+222 http fetch GET 200 https://registry.npmjs.org/inherits 149ms (cache miss)
+223 silly packumentCache full:https://registry.npmjs.org/inherits set size:undefined disposed:false
+224 http fetch GET 200 https://registry.npmjs.org/string_decoder 150ms (cache miss)
+225 silly packumentCache full:https://registry.npmjs.org/string_decoder set size:undefined disposed:false
+226 http fetch GET 200 https://registry.npmjs.org/isarray 152ms (cache miss)
+227 silly packumentCache full:https://registry.npmjs.org/isarray set size:undefined disposed:false
+228 silly placeDep ROOT kleur@3.0.3 OK for: prompts@2.4.2 want: ^3.0.3
+229 silly placeDep ROOT sisteransi@1.0.5 OK for: prompts@2.4.2 want: ^1.0.5
+230 silly placeDep ROOT core-util-is@1.0.3 OK for: readable-stream@1.1.14 want: ~1.0.0
+231 silly placeDep ROOT inherits@2.0.4 OK for: readable-stream@1.1.14 want: ~2.0.1
+232 silly placeDep ROOT isarray@0.0.1 OK for: readable-stream@1.1.14 want: 0.0.1
+233 silly placeDep ROOT string_decoder@0.10.31 OK for: readable-stream@1.1.14 want: ~0.10.x
+234 silly placeDep ROOT shebang-regex@3.0.0 OK for: shebang-command@2.0.0 want: ^3.0.0
+235 silly placeDep ROOT has-flag@4.0.0 OK for: supports-color@7.2.0 want: ^4.0.0
+236 silly placeDep ROOT debug@2.6.9 OK for: tar-pack@3.4.1 want: ^2.2.0
+237 silly placeDep ROOT fstream@1.0.12 OK for: tar-pack@3.4.1 want: ^1.0.10
+238 silly placeDep ROOT fstream-ignore@1.0.5 OK for: tar-pack@3.4.1 want: ^1.0.5
+239 silly placeDep ROOT once@1.4.0 OK for: tar-pack@3.4.1 want: ^1.3.3
+240 silly placeDep node_modules/tar-pack readable-stream@2.3.8 OK for: tar-pack@3.4.1 want: ^2.1.4
+241 silly placeDep ROOT rimraf@2.7.1 OK for: tar-pack@3.4.1 want: ^2.5.1
+242 silly placeDep ROOT tar@2.2.2 OK for: tar-pack@3.4.1 want: ^2.2.1
+243 silly placeDep ROOT uid-number@0.0.6 OK for: tar-pack@3.4.1 want: ^0.0.6
+244 silly fetch manifest ms@2.0.0
+245 silly packumentCache full:https://registry.npmjs.org/ms cache-miss
+246 silly fetch manifest mkdirp@>=0.5 0
+247 silly packumentCache full:https://registry.npmjs.org/mkdirp cache-miss
+248 silly fetch manifest rimraf@2
+249 silly packumentCache full:https://registry.npmjs.org/rimraf cache-miss
+250 silly fetch manifest minimatch@^3.0.0
+251 silly packumentCache full:https://registry.npmjs.org/minimatch cache-miss
+252 silly fetch manifest wrappy@1
+253 silly packumentCache full:https://registry.npmjs.org/wrappy cache-miss
+254 silly fetch manifest isarray@~1.0.0
+255 silly packumentCache full:https://registry.npmjs.org/isarray cache-miss
+256 silly fetch manifest safe-buffer@~5.1.1
+257 silly packumentCache full:https://registry.npmjs.org/safe-buffer cache-miss
+258 silly fetch manifest string_decoder@~1.1.1
+259 silly packumentCache full:https://registry.npmjs.org/string_decoder cache-miss
+260 silly fetch manifest util-deprecate@~1.0.1
+261 silly packumentCache full:https://registry.npmjs.org/util-deprecate cache-miss
+262 silly fetch manifest process-nextick-args@~2.0.0
+263 silly packumentCache full:https://registry.npmjs.org/process-nextick-args cache-miss
+264 silly fetch manifest glob@^7.1.3
+265 silly packumentCache full:https://registry.npmjs.org/glob cache-miss
+266 http cache https://registry.npmjs.org/string_decoder 23ms (cache hit)
+267 silly packumentCache full:https://registry.npmjs.org/string_decoder set size:28441 disposed:false
+268 silly fetch manifest block-stream@*
+269 silly packumentCache full:https://registry.npmjs.org/block-stream cache-miss
+270 http cache https://registry.npmjs.org/isarray 28ms (cache hit)
+271 silly packumentCache full:https://registry.npmjs.org/isarray set size:17392 disposed:false
+272 http cache https://registry.npmjs.org/rimraf 33ms (cache hit)
+273 silly packumentCache full:https://registry.npmjs.org/rimraf set size:212626 disposed:false
+274 http fetch GET 200 https://registry.npmjs.org/util-deprecate 175ms (cache miss)
+275 silly packumentCache full:https://registry.npmjs.org/util-deprecate set size:undefined disposed:false
+276 http fetch GET 200 https://registry.npmjs.org/wrappy 178ms (cache miss)
+277 silly packumentCache full:https://registry.npmjs.org/wrappy set size:undefined disposed:false
+278 http fetch GET 200 https://registry.npmjs.org/process-nextick-args 177ms (cache miss)
+279 silly packumentCache full:https://registry.npmjs.org/process-nextick-args set size:undefined disposed:false
+280 http fetch GET 200 https://registry.npmjs.org/safe-buffer 179ms (cache miss)
+281 silly packumentCache full:https://registry.npmjs.org/safe-buffer set size:undefined disposed:false
+282 http fetch GET 200 https://registry.npmjs.org/block-stream 155ms (cache miss)
+283 silly packumentCache full:https://registry.npmjs.org/block-stream set size:undefined disposed:false
+284 http fetch GET 200 https://registry.npmjs.org/mkdirp 198ms (cache miss)
+285 silly packumentCache full:https://registry.npmjs.org/mkdirp set size:undefined disposed:false
+286 http fetch GET 200 https://registry.npmjs.org/ms 208ms (cache miss)
+287 silly packumentCache full:https://registry.npmjs.org/ms set size:undefined disposed:false
+288 http fetch GET 200 https://registry.npmjs.org/minimatch 306ms (cache miss)
+289 silly packumentCache full:https://registry.npmjs.org/minimatch set size:undefined disposed:false
+290 http fetch GET 200 https://registry.npmjs.org/glob 309ms (cache miss)
+291 silly packumentCache full:https://registry.npmjs.org/glob set size:undefined disposed:false
+292 silly placeDep ROOT ms@2.0.0 OK for: debug@2.6.9 want: 2.0.0
+293 silly placeDep ROOT mkdirp@0.5.6 OK for: fstream@1.0.12 want: >=0.5 0
+294 silly fetch manifest minimist@^1.2.6
+295 silly packumentCache full:https://registry.npmjs.org/minimist cache-miss
+296 http fetch GET 200 https://registry.npmjs.org/minimist 157ms (cache miss)
+297 silly packumentCache full:https://registry.npmjs.org/minimist set size:undefined disposed:false
+298 silly placeDep ROOT minimatch@3.1.5 OK for: fstream-ignore@1.0.5 want: ^3.0.0
+299 silly fetch manifest brace-expansion@^1.1.7
+300 silly packumentCache full:https://registry.npmjs.org/brace-expansion cache-miss
+301 http fetch GET 200 https://registry.npmjs.org/brace-expansion 117ms (cache miss)
+302 silly packumentCache full:https://registry.npmjs.org/brace-expansion set size:undefined disposed:false
+303 silly placeDep ROOT brace-expansion@1.1.14 OK for: minimatch@3.1.5 want: ^1.1.7
+304 silly fetch manifest concat-map@0.0.1
+305 silly packumentCache full:https://registry.npmjs.org/concat-map cache-miss
+306 silly fetch manifest balanced-match@^1.0.0
+307 silly packumentCache full:https://registry.npmjs.org/balanced-match cache-miss
+308 http fetch GET 200 https://registry.npmjs.org/balanced-match 118ms (cache miss)
+309 silly packumentCache full:https://registry.npmjs.org/balanced-match set size:undefined disposed:false
+310 http fetch GET 200 https://registry.npmjs.org/concat-map 119ms (cache miss)
+311 silly packumentCache full:https://registry.npmjs.org/concat-map set size:undefined disposed:false
+312 silly placeDep ROOT balanced-match@1.0.2 OK for: brace-expansion@1.1.14 want: ^1.0.0
+313 silly placeDep ROOT concat-map@0.0.1 OK for: brace-expansion@1.1.14 want: 0.0.1
+314 silly placeDep ROOT minimist@1.2.8 OK for: mkdirp@0.5.6 want: ^1.2.6
+315 silly placeDep ROOT wrappy@1.0.2 OK for: once@1.4.0 want: 1
+316 silly placeDep ROOT glob@7.2.3 OK for: rimraf@2.7.1 want: ^7.1.3
+317 silly fetch manifest inflight@^1.0.4
+318 silly packumentCache full:https://registry.npmjs.org/inflight cache-miss
+319 silly fetch manifest fs.realpath@^1.0.0
+320 silly packumentCache full:https://registry.npmjs.org/fs.realpath cache-miss
+321 silly fetch manifest path-is-absolute@^1.0.0
+322 silly packumentCache full:https://registry.npmjs.org/path-is-absolute cache-miss
+323 http fetch GET 200 https://registry.npmjs.org/fs.realpath 115ms (cache miss)
+324 silly packumentCache full:https://registry.npmjs.org/fs.realpath set size:undefined disposed:false
+325 http fetch GET 200 https://registry.npmjs.org/path-is-absolute 117ms (cache miss)
+326 silly packumentCache full:https://registry.npmjs.org/path-is-absolute set size:undefined disposed:false
+327 http fetch GET 200 https://registry.npmjs.org/inflight 118ms (cache miss)
+328 silly packumentCache full:https://registry.npmjs.org/inflight set size:undefined disposed:false
+329 silly placeDep ROOT fs.realpath@1.0.0 OK for: glob@7.2.3 want: ^1.0.0
+330 silly placeDep ROOT inflight@1.0.6 OK for: glob@7.2.3 want: ^1.0.4
+331 silly placeDep ROOT path-is-absolute@1.0.1 OK for: glob@7.2.3 want: ^1.0.0
+332 silly placeDep ROOT block-stream@0.0.9 OK for: tar@2.2.2 want: *
+333 silly placeDep node_modules/through2 readable-stream@1.0.34 OK for: through2@0.6.5 want: >=1.0.33-1 <1.1.0-0
+334 silly placeDep ROOT xtend@4.0.2 OK for: through2@0.6.5 want: >=4.0.0 <4.1.0-0
+335 silly placeDep ROOT builtins@1.0.3 OK for: validate-npm-package-name@3.0.0 want: ^1.0.3
+336 silly placeDep ROOT isexe@2.0.0 OK for: which@2.0.2 want: ^2.0.0
+337 silly placeDep node_modules/tar-pack isarray@1.0.0 OK for: readable-stream@2.3.8 want: ~1.0.0
+338 silly placeDep ROOT process-nextick-args@2.0.1 OK for: readable-stream@2.3.8 want: ~2.0.0
+339 silly placeDep ROOT safe-buffer@5.1.2 OK for: readable-stream@2.3.8 want: ~5.1.1
+340 silly placeDep node_modules/tar-pack string_decoder@1.1.1 OK for: readable-stream@2.3.8 want: ~1.1.1
+341 silly placeDep ROOT util-deprecate@1.0.2 OK for: readable-stream@2.3.8 want: ~1.0.1
+342 silly reify moves {}
+343 silly audit bulk request {
+343 silly audit   'create-react-app': [ '5.1.0' ],
+343 silly audit   chalk: [ '4.1.2' ],
+343 silly audit   commander: [ '4.1.1' ],
+343 silly audit   'cross-spawn': [ '7.0.6' ],
+343 silly audit   envinfo: [ '7.21.0' ],
+343 silly audit   'fs-extra': [ '10.1.0' ],
+343 silly audit   hyperquest: [ '2.1.3' ],
+343 silly audit   prompts: [ '2.4.2' ],
+343 silly audit   semver: [ '7.8.0' ],
+343 silly audit   'tar-pack': [ '3.4.1' ],
+343 silly audit   tmp: [ '0.2.5' ],
+343 silly audit   'validate-npm-package-name': [ '3.0.0' ],
+343 silly audit   'ansi-styles': [ '4.3.0' ],
+343 silly audit   'supports-color': [ '7.2.0' ],
+343 silly audit   'color-convert': [ '2.0.1' ],
+343 silly audit   'color-name': [ '1.1.4' ],
+343 silly audit   'path-key': [ '3.1.1' ],
+343 silly audit   'shebang-command': [ '2.0.0' ],
+343 silly audit   which: [ '2.0.2' ],
+343 silly audit   'graceful-fs': [ '4.2.11' ],
+343 silly audit   jsonfile: [ '6.2.1' ],
+343 silly audit   universalify: [ '2.0.1' ],
+343 silly audit   'buffer-from': [ '0.1.2' ],
+343 silly audit   duplexer2: [ '0.0.2' ],
+343 silly audit   through2: [ '0.6.5' ],
+343 silly audit   'readable-stream': [ '1.1.14', '2.3.8', '1.0.34' ],
+343 silly audit   kleur: [ '3.0.3' ],
+343 silly audit   sisteransi: [ '1.0.5' ],
+343 silly audit   'core-util-is': [ '1.0.3' ],
+343 silly audit   inherits: [ '2.0.4' ],
+343 silly audit   isarray: [ '0.0.1', '1.0.0' ],
+343 silly audit   string_decoder: [ '0.10.31', '1.1.1' ],
+343 silly audit   'shebang-regex': [ '3.0.0' ],
+343 silly audit   'has-flag': [ '4.0.0' ],
+343 silly audit   debug: [ '2.6.9' ],
+343 silly audit   fstream: [ '1.0.12' ],
+343 silly audit   'fstream-ignore': [ '1.0.5' ],
+343 silly audit   once: [ '1.4.0' ],
+343 silly audit   rimraf: [ '2.7.1' ],
+343 silly audit   tar: [ '2.2.2' ],
+343 silly audit   'uid-number': [ '0.0.6' ],
+343 silly audit   ms: [ '2.0.0' ],
+343 silly audit   mkdirp: [ '0.5.6' ],
+343 silly audit   minimatch: [ '3.1.5' ],
+343 silly audit   'brace-expansion': [ '1.1.14' ],
+343 silly audit   'balanced-match': [ '1.0.2' ],
+343 silly audit   'concat-map': [ '0.0.1' ],
+343 silly audit   minimist: [ '1.2.8' ],
+343 silly audit   wrappy: [ '1.0.2' ],
+343 silly audit   glob: [ '7.2.3' ],
+343 silly audit   'fs.realpath': [ '1.0.0' ],
+343 silly audit   inflight: [ '1.0.6' ],
+343 silly audit   'path-is-absolute': [ '1.0.1' ],
+343 silly audit   'block-stream': [ '0.0.9' ],
+343 silly audit   xtend: [ '4.0.2' ],
+343 silly audit   builtins: [ '1.0.3' ],
+343 silly audit   isexe: [ '2.0.0' ],
+343 silly audit   'process-nextick-args': [ '2.0.1' ],
+343 silly audit   'safe-buffer': [ '5.1.2' ],
+343 silly audit   'util-deprecate': [ '1.0.2' ]
+343 silly audit }
+344 http cache util-deprecate@https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz 0ms (cache hit)
+345 http cache safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz 0ms (cache hit)
+346 http cache process-nextick-args@https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz 0ms (cache hit)
+347 http cache builtins@https://registry.npmjs.org/builtins/-/builtins-1.0.3.tgz 1ms (cache hit)
+348 http cache isexe@https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz 0ms (cache hit)
+349 http cache xtend@https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz 0ms (cache hit)
+350 http cache path-is-absolute@https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz 0ms (cache hit)
+351 http cache block-stream@https://registry.npmjs.org/block-stream/-/block-stream-0.0.9.tgz 0ms (cache hit)
+352 http cache fs.realpath@https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz 0ms (cache hit)
+353 http cache glob@https://registry.npmjs.org/glob/-/glob-7.2.3.tgz 0ms (cache hit)
+354 http cache inflight@https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz 0ms (cache hit)
+355 http cache wrappy@https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz 0ms (cache hit)
+356 http cache concat-map@https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz 0ms (cache hit)
+357 http cache balanced-match@https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz 0ms (cache hit)
+358 http cache minimist@https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz 0ms (cache hit)
+359 http cache uid-number@https://registry.npmjs.org/uid-number/-/uid-number-0.0.6.tgz 0ms (cache hit)
+360 http cache minimatch@https://registry.npmjs.org/minimatch/-/minimatch-3.1.5.tgz 0ms (cache hit)
+361 http cache brace-expansion@https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.14.tgz 0ms (cache hit)
+362 http cache tar@https://registry.npmjs.org/tar/-/tar-2.2.2.tgz 0ms (cache hit)
+363 http cache rimraf@https://registry.npmjs.org/rimraf/-/rimraf-2.7.1.tgz 0ms (cache hit)
+364 http cache mkdirp@https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.6.tgz 0ms (cache hit)
+365 http cache fstream-ignore@https://registry.npmjs.org/fstream-ignore/-/fstream-ignore-1.0.5.tgz 0ms (cache hit)
+366 http cache once@https://registry.npmjs.org/once/-/once-1.4.0.tgz 0ms (cache hit)
+367 http cache fstream@https://registry.npmjs.org/fstream/-/fstream-1.0.12.tgz 0ms (cache hit)
+368 http cache ms@https://registry.npmjs.org/ms/-/ms-2.0.0.tgz 0ms (cache hit)
+369 http cache debug@https://registry.npmjs.org/debug/-/debug-2.6.9.tgz 0ms (cache hit)
+370 http cache has-flag@https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz 0ms (cache hit)
+371 http cache shebang-regex@https://registry.npmjs.org/shebang-regex/-/shebang-regex-3.0.0.tgz 0ms (cache hit)
+372 http cache string_decoder@https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz 0ms (cache hit)
+373 http cache isarray@https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz 0ms (cache hit)
+374 http cache inherits@https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz 0ms (cache hit)
+375 http cache core-util-is@https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz 0ms (cache hit)
+376 http cache sisteransi@https://registry.npmjs.org/sisteransi/-/sisteransi-1.0.5.tgz 0ms (cache hit)
+377 http cache kleur@https://registry.npmjs.org/kleur/-/kleur-3.0.3.tgz 0ms (cache hit)
+378 http cache readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.14.tgz 0ms (cache hit)
+379 http cache buffer-from@https://registry.npmjs.org/buffer-from/-/buffer-from-0.1.2.tgz 0ms (cache hit)
+380 http cache duplexer2@https://registry.npmjs.org/duplexer2/-/duplexer2-0.0.2.tgz 0ms (cache hit)
+381 http cache through2@https://registry.npmjs.org/through2/-/through2-0.6.5.tgz 1ms (cache hit)
+382 http cache universalify@https://registry.npmjs.org/universalify/-/universalify-2.0.1.tgz 0ms (cache hit)
+383 http cache jsonfile@https://registry.npmjs.org/jsonfile/-/jsonfile-6.2.1.tgz 0ms (cache hit)
+384 http cache graceful-fs@https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz 0ms (cache hit)
+385 http cache path-key@https://registry.npmjs.org/path-key/-/path-key-3.1.1.tgz 0ms (cache hit)
+386 http cache which@https://registry.npmjs.org/which/-/which-2.0.2.tgz 0ms (cache hit)
+387 http cache shebang-command@https://registry.npmjs.org/shebang-command/-/shebang-command-2.0.0.tgz 0ms (cache hit)
+388 http cache color-name@https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz 0ms (cache hit)
+389 http cache color-convert@https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz 0ms (cache hit)
+390 http cache ansi-styles@https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz 0ms (cache hit)
+391 http cache tmp@https://registry.npmjs.org/tmp/-/tmp-0.2.5.tgz 0ms (cache hit)
+392 http cache tar-pack@https://registry.npmjs.org/tar-pack/-/tar-pack-3.4.1.tgz 0ms (cache hit)
+393 http cache semver@https://registry.npmjs.org/semver/-/semver-7.8.0.tgz 0ms (cache hit)
+394 http cache prompts@https://registry.npmjs.org/prompts/-/prompts-2.4.2.tgz 0ms (cache hit)
+395 http cache hyperquest@https://registry.npmjs.org/hyperquest/-/hyperquest-2.1.3.tgz 0ms (cache hit)
+396 http cache envinfo@https://registry.npmjs.org/envinfo/-/envinfo-7.21.0.tgz 0ms (cache hit)
+397 http cache fs-extra@https://registry.npmjs.org/fs-extra/-/fs-extra-10.1.0.tgz 0ms (cache hit)
+398 http cache cross-spawn@https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.6.tgz 0ms (cache hit)
+399 http cache readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.34.tgz 0ms (cache hit)
+400 http cache create-react-app@https://registry.npmjs.org/create-react-app/-/create-react-app-5.1.0.tgz 0ms (cache hit)
+401 http cache chalk@https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz 0ms (cache hit)
+402 http cache commander@https://registry.npmjs.org/commander/-/commander-4.1.1.tgz 0ms (cache hit)
+403 http cache validate-npm-package-name@https://registry.npmjs.org/validate-npm-package-name/-/validate-npm-package-name-3.0.0.tgz 0ms (cache hit)
+404 http cache supports-color@https://registry.npmjs.org/supports-color/-/supports-color-7.2.0.tgz 0ms (cache hit)
+405 silly tarball no local data for util-deprecate@https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz. Extracting by manifest.
+406 silly tarball no local data for safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz. Extracting by manifest.
+407 http cache string_decoder@https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz 0ms (cache hit)
+408 silly tarball no local data for process-nextick-args@https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz. Extracting by manifest.
+409 silly tarball no local data for builtins@https://registry.npmjs.org/builtins/-/builtins-1.0.3.tgz. Extracting by manifest.
+410 silly tarball no local data for isexe@https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz. Extracting by manifest.
+411 silly tarball no local data for xtend@https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz. Extracting by manifest.
+412 silly tarball no local data for path-is-absolute@https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz. Extracting by manifest.
+413 silly tarball no local data for block-stream@https://registry.npmjs.org/block-stream/-/block-stream-0.0.9.tgz. Extracting by manifest.
+414 silly tarball no local data for fs.realpath@https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz. Extracting by manifest.
+415 silly tarball no local data for glob@https://registry.npmjs.org/glob/-/glob-7.2.3.tgz. Extracting by manifest.
+416 silly tarball no local data for inflight@https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz. Extracting by manifest.
+417 silly tarball no local data for wrappy@https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz. Extracting by manifest.
+418 silly tarball no local data for concat-map@https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz. Extracting by manifest.
+419 silly tarball no local data for balanced-match@https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz. Extracting by manifest.
+420 silly tarball no local data for minimist@https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz. Extracting by manifest.
+421 silly tarball no local data for uid-number@https://registry.npmjs.org/uid-number/-/uid-number-0.0.6.tgz. Extracting by manifest.
+422 silly tarball no local data for minimatch@https://registry.npmjs.org/minimatch/-/minimatch-3.1.5.tgz. Extracting by manifest.
+423 silly tarball no local data for brace-expansion@https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.14.tgz. Extracting by manifest.
+424 silly tarball no local data for tar@https://registry.npmjs.org/tar/-/tar-2.2.2.tgz. Extracting by manifest.
+425 silly tarball no local data for rimraf@https://registry.npmjs.org/rimraf/-/rimraf-2.7.1.tgz. Extracting by manifest.
+426 silly tarball no local data for mkdirp@https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.6.tgz. Extracting by manifest.
+427 silly tarball no local data for fstream-ignore@https://registry.npmjs.org/fstream-ignore/-/fstream-ignore-1.0.5.tgz. Extracting by manifest.
+428 silly tarball no local data for once@https://registry.npmjs.org/once/-/once-1.4.0.tgz. Extracting by manifest.
+429 silly tarball no local data for fstream@https://registry.npmjs.org/fstream/-/fstream-1.0.12.tgz. Extracting by manifest.
+430 silly tarball no local data for ms@https://registry.npmjs.org/ms/-/ms-2.0.0.tgz. Extracting by manifest.
+431 silly tarball no local data for debug@https://registry.npmjs.org/debug/-/debug-2.6.9.tgz. Extracting by manifest.
+432 silly tarball no local data for has-flag@https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz. Extracting by manifest.
+433 silly tarball no local data for shebang-regex@https://registry.npmjs.org/shebang-regex/-/shebang-regex-3.0.0.tgz. Extracting by manifest.
+434 silly tarball no local data for string_decoder@https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz. Extracting by manifest.
+435 silly tarball no local data for isarray@https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz. Extracting by manifest.
+436 silly tarball no local data for inherits@https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz. Extracting by manifest.
+437 silly tarball no local data for core-util-is@https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz. Extracting by manifest.
+438 silly tarball no local data for sisteransi@https://registry.npmjs.org/sisteransi/-/sisteransi-1.0.5.tgz. Extracting by manifest.
+439 http cache isarray@https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz 0ms (cache hit)
+440 silly tarball no local data for kleur@https://registry.npmjs.org/kleur/-/kleur-3.0.3.tgz. Extracting by manifest.
+441 silly tarball no local data for readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.14.tgz. Extracting by manifest.
+442 silly tarball no local data for buffer-from@https://registry.npmjs.org/buffer-from/-/buffer-from-0.1.2.tgz. Extracting by manifest.
+443 silly tarball no local data for duplexer2@https://registry.npmjs.org/duplexer2/-/duplexer2-0.0.2.tgz. Extracting by manifest.
+444 silly tarball no local data for through2@https://registry.npmjs.org/through2/-/through2-0.6.5.tgz. Extracting by manifest.
+445 silly tarball no local data for universalify@https://registry.npmjs.org/universalify/-/universalify-2.0.1.tgz. Extracting by manifest.
+446 silly tarball no local data for jsonfile@https://registry.npmjs.org/jsonfile/-/jsonfile-6.2.1.tgz. Extracting by manifest.
+447 silly tarball no local data for graceful-fs@https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz. Extracting by manifest.
+448 silly tarball no local data for path-key@https://registry.npmjs.org/path-key/-/path-key-3.1.1.tgz. Extracting by manifest.
+449 silly tarball no local data for which@https://registry.npmjs.org/which/-/which-2.0.2.tgz. Extracting by manifest.
+450 silly tarball no local data for shebang-command@https://registry.npmjs.org/shebang-command/-/shebang-command-2.0.0.tgz. Extracting by manifest.
+451 silly tarball no local data for color-name@https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz. Extracting by manifest.
+452 silly tarball no local data for color-convert@https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz. Extracting by manifest.
+453 silly tarball no local data for ansi-styles@https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz. Extracting by manifest.
+454 silly tarball no local data for tmp@https://registry.npmjs.org/tmp/-/tmp-0.2.5.tgz. Extracting by manifest.
+455 silly tarball no local data for tar-pack@https://registry.npmjs.org/tar-pack/-/tar-pack-3.4.1.tgz. Extracting by manifest.
+456 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-7.8.0.tgz. Extracting by manifest.
+457 http cache readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.8.tgz 0ms (cache hit)
+458 silly tarball no local data for prompts@https://registry.npmjs.org/prompts/-/prompts-2.4.2.tgz. Extracting by manifest.
+459 silly tarball no local data for hyperquest@https://registry.npmjs.org/hyperquest/-/hyperquest-2.1.3.tgz. Extracting by manifest.
+460 silly tarball no local data for envinfo@https://registry.npmjs.org/envinfo/-/envinfo-7.21.0.tgz. Extracting by manifest.
+461 silly tarball no local data for fs-extra@https://registry.npmjs.org/fs-extra/-/fs-extra-10.1.0.tgz. Extracting by manifest.
+462 silly tarball no local data for cross-spawn@https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.6.tgz. Extracting by manifest.
+463 silly tarball no local data for readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.34.tgz. Extracting by manifest.
+464 silly tarball no local data for create-react-app@https://registry.npmjs.org/create-react-app/-/create-react-app-5.1.0.tgz. Extracting by manifest.
+465 silly tarball no local data for chalk@https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz. Extracting by manifest.
+466 silly tarball no local data for commander@https://registry.npmjs.org/commander/-/commander-4.1.1.tgz. Extracting by manifest.
+467 silly tarball no local data for validate-npm-package-name@https://registry.npmjs.org/validate-npm-package-name/-/validate-npm-package-name-3.0.0.tgz. Extracting by manifest.
+468 silly tarball no local data for supports-color@https://registry.npmjs.org/supports-color/-/supports-color-7.2.0.tgz. Extracting by manifest.
+469 silly tarball no local data for string_decoder@https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz. Extracting by manifest.
+470 silly tarball no local data for isarray@https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz. Extracting by manifest.
+471 silly tarball no local data for readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.8.tgz. Extracting by manifest.
+472 http fetch GET 200 https://registry.npmjs.org/builtins/-/builtins-1.0.3.tgz 250ms (cache miss)
+473 http fetch GET 200 https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz 253ms (cache miss)
+474 http fetch GET 200 https://registry.npmjs.org/process-nextick-args/-/process-nextick-args-2.0.1.tgz 271ms (cache miss)
+475 http fetch GET 200 https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz 269ms (cache miss)
+476 http fetch GET 200 https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz 270ms (cache miss)
+477 http fetch GET 200 https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz 277ms (cache miss)
+478 http fetch GET 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.1.2.tgz 276ms (cache miss)
+479 http fetch GET 200 https://registry.npmjs.org/block-stream/-/block-stream-0.0.9.tgz 278ms (cache miss)
+480 http fetch GET 200 https://registry.npmjs.org/glob/-/glob-7.2.3.tgz 309ms (cache miss)
+481 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 348ms
+482 silly audit report {
+482 silly audit report   tar: [
+482 silly audit report     {
+482 silly audit report       id: 1112659,
+482 silly audit report       url: 'https://github.com/advisories/GHSA-34x7-hfp2-rc4v',
+482 silly audit report       title: 'node-tar Vulnerable to Arbitrary File Creation/Overwrite via Hardlink Path Traversal',
+482 silly audit report       severity: 'high',
+482 silly audit report       vulnerable_versions: '<7.5.7',
+482 silly audit report       cwe: [Array],
+482 silly audit report       cvss: [Object]
+482 silly audit report     },
+482 silly audit report     {
+482 silly audit report       id: 1113300,
+482 silly audit report       url: 'https://github.com/advisories/GHSA-8qq5-rm4j-mr97',
+482 silly audit report       title: 'node-tar is Vulnerable to Arbitrary File Overwrite and Symlink Poisoning via Insufficient Path Sanitization',
+482 silly audit report       severity: 'high',
+482 silly audit report       vulnerable_versions: '<=7.5.2',
+482 silly audit report       cwe: [Array],
+482 silly audit report       cvss: [Object]
+482 silly audit report     },
+482 silly audit report     {
+482 silly audit report       id: 1113375,
+482 silly audit report       url: 'https://github.com/advisories/GHSA-83g3-92jg-28cx',
+482 silly audit report       title: 'Arbitrary File Read/Write via Hardlink Target Escape Through Symlink Chain in node-tar Extraction',
+482 silly audit report       severity: 'high',
+482 silly audit report       vulnerable_versions: '<7.5.8',
+482 silly audit report       cwe: [Array],
+482 silly audit report       cvss: [Object]
+482 silly audit report     },
+482 silly audit report     {
+482 silly audit report       id: 1114200,
+482 silly audit report       url: 'https://github.com/advisories/GHSA-qffp-2rhf-9h96',
+482 silly audit report       title: 'tar has Hardlink Path Traversal via Drive-Relative Linkpath',
+482 silly audit report       severity: 'high',
+482 silly audit report       vulnerable_versions: '<=7.5.9',
+482 silly audit report       cwe: [Array],
+482 silly audit report       cvss: [Object]
+482 silly audit report     },
+482 silly audit report     {
+482 silly audit report       id: 1114302,
+482 silly audit report       url: 'https://github.com/advisories/GHSA-9ppj-qmqm-q256',
+482 silly audit report       title: 'node-tar Symlink Path Traversal via Drive-Relative Linkpath',
+482 silly audit report       severity: 'high',
+482 silly audit report       vulnerable_versions: '<=7.5.10',
+482 silly audit report       cwe: [Array],
+482 silly audit report       cvss: [Object]
+482 silly audit report     },
+482 silly audit report     {
+482 silly audit report       id: 1114680,
+482 silly audit report       url: 'https://github.com/advisories/GHSA-r6q2-hw4h-h46w',
+482 silly audit report       title: 'Race Condition in node-tar Path Reservations via Unicode Ligature Collisions on macOS APFS',
+482 silly audit report       severity: 'high',
+482 silly audit report       vulnerable_versions: '<=7.5.3',
+482 silly audit report       cwe: [Array],
+482 silly audit report       cvss: [Object]
+482 silly audit report     },
+482 silly audit report     {
+482 silly audit report       id: 1089685,
+482 silly audit report       url: 'https://github.com/advisories/GHSA-3jfq-g458-7qm9',
+482 silly audit report       title: 'Arbitrary File Creation/Overwrite due to insufficient absolute path sanitization',
+482 silly audit report       severity: 'high',
+482 silly audit report       vulnerable_versions: '<3.2.2',
+482 silly audit report       cwe: [Array],
+482 silly audit report       cvss: [Object]
+482 silly audit report     },
+482 silly audit report     {
+482 silly audit report       id: 1095117,
+482 silly audit report       url: 'https://github.com/advisories/GHSA-5955-9wpr-37jh',
+482 silly audit report       title: 'Arbitrary File Creation/Overwrite on Windows via insufficient relative path sanitization',
+482 silly audit report       severity: 'high',
+482 silly audit report       vulnerable_versions: '<4.4.18',
+482 silly audit report       cwe: [Array],
+482 silly audit report       cvss: [Object]
+482 silly audit report     },
+482 silly audit report     {
+482 silly audit report       id: 1097493,
+482 silly audit report       url: 'https://github.com/advisories/GHSA-f5x3-32g6-xq36',
+482 silly audit report       title: 'Denial of service while parsing a tar file due to lack of folders count validation',
+482 silly audit report       severity: 'moderate',
+482 silly audit report       vulnerable_versions: '<6.2.1',
+482 silly audit report       cwe: [Array],
+482 silly audit report       cvss: [Object]
+482 silly audit report     }
+482 silly audit report   ]
+482 silly audit report }
+483 silly packumentCache corgi:https://registry.npmjs.org/tar cache-miss
+484 warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+485 http fetch GET 200 https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz 344ms (cache miss)
+486 http fetch GET 200 https://registry.npmjs.org/uid-number/-/uid-number-0.0.6.tgz 348ms (cache miss)
+487 http fetch GET 200 https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.6.tgz 367ms (cache miss)
+488 warn deprecated uid-number@0.0.6: This package is no longer supported.
+489 http fetch GET 200 https://registry.npmjs.org/rimraf/-/rimraf-2.7.1.tgz 375ms (cache miss)
+490 http fetch GET 200 https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.14.tgz 379ms (cache miss)
+491 http fetch GET 200 https://registry.npmjs.org/minimatch/-/minimatch-3.1.5.tgz 381ms (cache miss)
+492 warn deprecated rimraf@2.7.1: Rimraf versions prior to v4 are no longer supported
+493 http fetch GET 200 https://registry.npmjs.org/once/-/once-1.4.0.tgz 402ms (cache miss)
+494 http fetch GET 200 https://registry.npmjs.org/fstream-ignore/-/fstream-ignore-1.0.5.tgz 411ms (cache miss)
+495 warn deprecated fstream-ignore@1.0.5: This package is no longer supported.
+496 http fetch GET 200 https://registry.npmjs.org/ms/-/ms-2.0.0.tgz 411ms (cache miss)
+497 http fetch GET 200 https://registry.npmjs.org/string_decoder/-/string_decoder-0.10.31.tgz 430ms (cache miss)
+498 http fetch GET 200 https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz 434ms (cache miss)
+499 http fetch GET 200 https://registry.npmjs.org/shebang-regex/-/shebang-regex-3.0.0.tgz 439ms (cache miss)
+500 http fetch GET 200 https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz 456ms (cache miss)
+501 http fetch GET 200 https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz 456ms (cache miss)
+502 http fetch GET 200 https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz 490ms (cache miss)
+503 http fetch GET 200 https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz 492ms (cache miss)
+504 http fetch GET 200 https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz 489ms (cache miss)
+505 http fetch GET 200 https://registry.npmjs.org/kleur/-/kleur-3.0.3.tgz 493ms (cache miss)
+506 http fetch GET 200 https://registry.npmjs.org/sisteransi/-/sisteransi-1.0.5.tgz 497ms (cache miss)
+507 http fetch GET 200 https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz 514ms (cache miss)
+508 warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+509 http fetch GET 200 https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz 519ms (cache miss)
+510 http fetch GET 200 https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz 522ms (cache miss)
+511 http fetch GET 200 https://registry.npmjs.org/fstream/-/fstream-1.0.12.tgz 522ms (cache miss)
+512 warn deprecated fstream@1.0.12: This package is no longer supported.
+513 http fetch GET 200 https://registry.npmjs.org/debug/-/debug-2.6.9.tgz 528ms (cache miss)
+514 http fetch GET 200 https://registry.npmjs.org/duplexer2/-/duplexer2-0.0.2.tgz 545ms (cache miss)
+515 http fetch GET 200 https://registry.npmjs.org/through2/-/through2-0.6.5.tgz 564ms (cache miss)
+516 http fetch GET 200 https://registry.npmjs.org/readable-stream/-/readable-stream-1.1.14.tgz 586ms (cache miss)
+517 http fetch GET 200 https://registry.npmjs.org/jsonfile/-/jsonfile-6.2.1.tgz 586ms (cache miss)
+518 http fetch GET 200 https://registry.npmjs.org/shebang-command/-/shebang-command-2.0.0.tgz 585ms (cache miss)
+519 http fetch GET 200 https://registry.npmjs.org/universalify/-/universalify-2.0.1.tgz 588ms (cache miss)
+520 http fetch GET 200 https://registry.npmjs.org/path-key/-/path-key-3.1.1.tgz 588ms (cache miss)
+521 http fetch GET 200 https://registry.npmjs.org/buffer-from/-/buffer-from-0.1.2.tgz 590ms (cache miss)
+522 http fetch GET 200 https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz 589ms (cache miss)
+523 http fetch GET 200 https://registry.npmjs.org/which/-/which-2.0.2.tgz 591ms (cache miss)
+524 http fetch GET 200 https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz 622ms (cache miss)
+525 http fetch GET 200 https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz 621ms (cache miss)
+526 http fetch GET 200 https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz 622ms (cache miss)
+527 http fetch GET 200 https://registry.npmjs.org/tmp/-/tmp-0.2.5.tgz 643ms (cache miss)
+528 http fetch GET 200 https://registry.npmjs.org/tar-pack/-/tar-pack-3.4.1.tgz 659ms (cache miss)
+529 http fetch GET 200 https://registry.npmjs.org/create-react-app/-/create-react-app-5.1.0.tgz 716ms (cache miss)
+530 http fetch GET 200 https://registry.npmjs.org/readable-stream/-/readable-stream-1.0.34.tgz 721ms (cache miss)
+531 http fetch GET 200 https://registry.npmjs.org/cross-spawn/-/cross-spawn-7.0.6.tgz 735ms (cache miss)
+532 http fetch GET 200 https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz 755ms (cache miss)
+533 http fetch GET 200 https://registry.npmjs.org/commander/-/commander-4.1.1.tgz 755ms (cache miss)
+534 http fetch GET 200 https://registry.npmjs.org/envinfo/-/envinfo-7.21.0.tgz 765ms (cache miss)
+535 http fetch GET 200 https://registry.npmjs.org/supports-color/-/supports-color-7.2.0.tgz 778ms (cache miss)
+536 http fetch GET 200 https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz 756ms (cache miss)
+537 http fetch GET 200 https://registry.npmjs.org/string_decoder/-/string_decoder-1.1.1.tgz 788ms (cache miss)
+538 http fetch GET 200 https://registry.npmjs.org/hyperquest/-/hyperquest-2.1.3.tgz 797ms (cache miss)
+539 http fetch GET 200 https://registry.npmjs.org/tar 503ms (cache miss)
+540 silly packumentCache corgi:https://registry.npmjs.org/tar set size:undefined disposed:false
+541 http fetch GET 200 https://registry.npmjs.org/validate-npm-package-name/-/validate-npm-package-name-3.0.0.tgz 838ms (cache miss)
+542 silly packumentCache corgi:https://registry.npmjs.org/tar-pack cache-miss
+543 http fetch GET 200 https://registry.npmjs.org/readable-stream/-/readable-stream-2.3.8.tgz 863ms (cache miss)
+544 http fetch GET 200 https://registry.npmjs.org/fs-extra/-/fs-extra-10.1.0.tgz 898ms (cache miss)
+545 http fetch GET 200 https://registry.npmjs.org/semver/-/semver-7.8.0.tgz 902ms (cache miss)
+546 http fetch GET 200 https://registry.npmjs.org/tar/-/tar-2.2.2.tgz 952ms (cache miss)
+547 warn deprecated tar@2.2.2: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+548 http fetch GET 200 https://registry.npmjs.org/prompts/-/prompts-2.4.2.tgz 945ms (cache miss)
+549 http fetch GET 200 https://registry.npmjs.org/tar-pack 346ms (cache miss)
+550 silly packumentCache corgi:https://registry.npmjs.org/tar-pack set size:undefined disposed:false
+551 silly packumentCache corgi:https://registry.npmjs.org/create-react-app cache-miss
+552 http cache https://registry.npmjs.org/create-react-app 9ms (cache hit)
+553 silly packumentCache corgi:https://registry.npmjs.org/create-react-app set size:137779 disposed:false
+554 verbose cwd C:\Users\meghn\Desktop\TeamTaskManager
+555 verbose os Windows_NT 10.0.26200
+556 verbose node v22.13.1
+557 verbose npm  v11.0.0
+558 notice
+558 notice New [33mminor[39m version of npm available! [33m11.0.0[39m -> [34m11.14.1[39m
+558 notice Changelog: [34mhttps://github.com/npm/cli/releases/tag/v11.14.1[39m
+558 notice To update run: [4mnpm install -g npm@11.14.1[24m
+558 notice  { force: true, [Symbol(proc-log.meta)]: true }
+559 verbose exit 0
+560 info ok

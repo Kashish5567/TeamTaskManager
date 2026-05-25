@@ -1,0 +1,148 @@
+TeamTaskManager — Project Flow + Requirements Check
+Generated: 24 May 2026 (IST)
+
+1) Project Flow (End-to-End)
+
+A. Signup/Login
+1.	User Signup: Name, Email, Password
+	API: POST /api/auth/register
+	Output: JWT token + user object
+
+2.	User Login: Email, Password
+	API: POST /api/auth/login
+	Output: JWT token + user object
+
+3.	Fetch Authenticated User
+	API: GET /api/auth/me
+	Header: Authorization: Bearer <token>
+
+B. Create Project (Creator Becomes Admin)
+1.	Logged-in user creates project
+	API: POST /api/projects
+	Token required
+
+	Behavior:
+	- project.admin = creator userId
+	- project.members automatically includes creator userId
+
+2.	Members can view assigned projects
+	API: GET /api/projects
+	Returns only projects where current user is a member
+
+C. Member Management (Admin Only)
+1.	Admin adds member by email
+	API: PUT /api/projects/:id/add-member
+	Body: { email }
+
+	Rules:
+	- Only admin can add members
+	- User must exist
+	- Same member cannot be added twice
+
+2.	Admin removes member by userId
+	API: PUT /api/projects/:id/remove-member
+	Body: { userId }
+
+	Rules:
+	- Only admin can remove members
+
+D. Task Management (Role-Based)
+
+Admin
+1.	Create Task
+	API: POST /api/tasks
+	Fields: title, description, dueDate, priority, assignedTo, projectId
+
+	Rules:
+	- Requester must belong to project
+	- Only admin can create tasks
+	- assignedTo user must belong to same project
+
+2.	Update Task
+	API: PUT /api/tasks/:id
+	Admin can update any task in project
+
+3.	Update Task Status
+	API: PUT /api/tasks/:id/status
+	Statuses: To Do, In Progress, Done
+
+4.	Delete Task
+	API: DELETE /api/tasks/:id
+	Only admin can delete tasks
+
+Member
+1.	View Assigned Tasks
+	API: GET /api/tasks/project/:projectId
+	Members see only assigned tasks
+
+2.	Update Assigned Task
+	APIs:
+	- PUT /api/tasks/:id
+	- PUT /api/tasks/:id/status
+
+	Rules:
+	- Allowed only if task is assigned to current member
+
+3.	Restrictions
+	- Members cannot create tasks
+	- Members cannot delete tasks
+
+E. Dashboard
+1.	API: GET /api/dashboard
+	Token required
+
+2.	Dashboard Metrics:
+	- Total Tasks
+	- Tasks by Status
+	- Tasks per User
+	- Overdue Tasks
+
+3.	Dashboard Rules:
+	- Admin sees all project tasks
+	- Members see only assigned tasks
+
+2) Functional Requirements Checklist
+
+User Authentication
+	Signup/Login with JWT: YES
+
+Project Management
+	Create Projects: YES
+	Add/Remove Members: YES
+	View Assigned Projects: YES
+
+Task Management
+	Create Tasks: YES
+	Assign Tasks: YES
+	Update Status: YES
+	Member-only task access: YES
+
+Dashboard
+	Total Tasks: YES
+	Tasks by Status: YES
+	Overdue Tasks: YES
+	Tasks per User: YES
+
+Role-Based Access
+	Admin permissions: YES
+	Member permissions: YES
+
+3) Backend  Database Requirements
+	REST APIs: YES
+	MongoDB + Mongoose: YES
+	Relationships (Users, Projects, Tasks): YES
+	Validations and Error Handling: PARTIAL
+
+Recommended Improvements
+	- Centralized validation middleware
+	- Better error handling
+	- Consistent API responses
+
+4) Role Testing
+1.	Create User A and login
+2.	User A creates project and becomes Admin
+3.	Create User B and login
+4.	User A adds User B to project
+5.	User A assigns tasks to User B
+6.	User B should only see assigned tasks
+7.	User B should receive 403 on unauthorized actions
