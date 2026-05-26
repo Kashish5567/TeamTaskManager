@@ -120,6 +120,7 @@ export default function Tasks() {
   const [viewMode, setViewMode] = useState("grid");
   const [showModal, setShowModal] = useState(false);
   const [editingTask, setEditingTask] = useState(null);
+  const [modalProject, setModalProject] = useState("");
 
   useEffect(() => {
     let alive = true;
@@ -177,6 +178,17 @@ export default function Tasks() {
     return map;
   }, [projectsRaw]);
 
+  const projectTitleToMembers = useMemo(() => {
+    const map = new Map();
+    projectsRaw.forEach((p) => map.set(p.title, p.members || []));
+    return map;
+  }, [projectsRaw]);
+
+  const modalProjectMembers = useMemo(() => {
+    const title = modalProject || (projectOptions.find((p) => p !== "all") ?? "");
+    return projectTitleToMembers.get(title) || [];
+  }, [modalProject, projectOptions, projectTitleToMembers]);
+
   const counts = {
     all: tasks.length,
     todo: tasks.filter((t) => t.status === "todo").length,
@@ -213,6 +225,7 @@ export default function Tasks() {
           description: data.desc,
           dueDate: data.due || undefined,
           priority: mapPriorityToApi(data.priority),
+          assignedTo: data.assignedTo || undefined,
         });
 
         setTasks((prev) =>
@@ -234,6 +247,7 @@ export default function Tasks() {
           dueDate: data.due || undefined,
           priority: mapPriorityToApi(data.priority),
           projectId,
+          assignedTo: data.assignedTo || undefined,
         });
 
         setTasks((prev) => [
@@ -252,6 +266,7 @@ export default function Tasks() {
 
     setShowModal(false);
     setEditingTask(null);
+    setModalProject("");
   };
 
   const handleDelete = async (id) => {
@@ -267,6 +282,7 @@ export default function Tasks() {
   const handleEdit = (task) => {
     if (!can("assignTasks")) return;
     setEditingTask(task);
+    setModalProject(task.project || "");
     setShowModal(true);
   };
 
@@ -293,6 +309,7 @@ export default function Tasks() {
           onClick={() => {
             if (!can("assignTasks")) return;
             setEditingTask(null);
+            setModalProject(projectOptions.find((p) => p !== "all") ?? "");
             setShowModal(true);
           }}
           disabled={!can("assignTasks")}
@@ -426,7 +443,9 @@ export default function Tasks() {
         <CreateTaskModal
           task={editingTask}
           projects={projectOptions.filter((p) => p !== "all")}
-          onClose={() => { setShowModal(false); setEditingTask(null); }}
+          projectMembers={modalProjectMembers}
+          onProjectChange={setModalProject}
+          onClose={() => { setShowModal(false); setEditingTask(null); setModalProject(""); }}
           onSave={handleSave}
         />
       )}

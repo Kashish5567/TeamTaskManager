@@ -1,12 +1,5 @@
 import { useState, useEffect } from "react";
-
-const ASSIGNEES = [
-  { i: "KA", c: "#6366f1", name: "Karan A." },
-  { i: "MR", c: "#ec4899", name: "Mita R."  },
-  { i: "SR", c: "#f59e0b", name: "Sam R."   },
-  { i: "AK", c: "#8b5cf6", name: "Arjun K." },
-  { i: "MP", c: "#10b981", name: "Meena P." },
-];
+import { getInitials, colorForId } from "../api/utils";
 
 const PRIO_CFG = {
   low:    { color: "#10b981", border: "#bbf7d0" },
@@ -14,34 +7,41 @@ const PRIO_CFG = {
   high:   { color: "#ef4444", border: "#fecaca" },
 };
 
-export default function CreateTaskModal({ task, projects, onClose, onSave }) {
+export default function CreateTaskModal({ task, projects, projectMembers = [], onClose, onSave, onProjectChange }) {
   const isEdit = !!task;
 
-  const [title,    setTitle]    = useState("");
-  const [desc,     setDesc]     = useState("");
-  const [project,  setProject]  = useState(projects[0] || "");
-  const [status,   setStatus]   = useState("todo");
-  const [priority, setPriority] = useState("medium");
-  const [due,      setDue]      = useState("");
-  const [assignee, setAssignee] = useState(ASSIGNEES[0]);
+  const [title,      setTitle]      = useState("");
+  const [desc,       setDesc]       = useState("");
+  const [project,    setProject]    = useState(projects[0] || "");
+  const [status,     setStatus]     = useState("todo");
+  const [priority,   setPriority]   = useState("medium");
+  const [due,        setDue]        = useState("");
+  const [assignedTo, setAssignedTo] = useState(null);
 
   // Populate form when editing
   useEffect(() => {
     if (task) {
-      setTitle(task.title    || "");
-      setDesc(task.desc      || "");
-      setProject(task.project || projects[0] || "");
-      setStatus(task.status  || "todo");
+      setTitle(task.title       || "");
+      setDesc(task.desc         || "");
+      setProject(task.project   || projects[0] || "");
+      setStatus(task.status     || "todo");
       setPriority(task.priority || "medium");
-      setDue(task.due        || "");
-      setAssignee(ASSIGNEES.find(a => a.i === task.assignee?.i) || ASSIGNEES[0]);
+      setDue(task.due           || "");
+      setAssignedTo(task.assignedTo || null);
     }
   }, [task, projects]);
+
+  // Reset assignee when member list changes (project switch)
+  useEffect(() => {
+    if (!isEdit) {
+      setAssignedTo(projectMembers.length > 0 ? projectMembers[0]._id : null);
+    }
+  }, [projectMembers, isEdit]);
 
   const handleSave = () => {
     if (!title.trim()) { alert("Task title is required"); return; }
     if (!due)          { alert("Due date is required");   return; }
-    onSave({ title, desc, project, status, priority, due, assignee });
+    onSave({ title, desc, project, status, priority, due, assignedTo });
   };
 
   return (
@@ -83,7 +83,7 @@ export default function CreateTaskModal({ task, projects, onClose, onSave }) {
           <div style={S.row}>
             <div style={{ ...S.field, flex: 1 }}>
               <label style={S.label}>Project</label>
-              <select style={S.select} value={project} onChange={(e) => setProject(e.target.value)}>
+              <select style={S.select} value={project} onChange={(e) => { setProject(e.target.value); onProjectChange?.(e.target.value); }}>
                 {projects.map((p) => <option key={p}>{p}</option>)}
               </select>
             </div>
@@ -136,26 +136,36 @@ export default function CreateTaskModal({ task, projects, onClose, onSave }) {
           {/* Assignee */}
           <div style={S.field}>
             <label style={S.label}>Assign to</label>
-            <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
-              {ASSIGNEES.map((a) => {
-                const active = assignee.i === a.i;
-                return (
-                  <button
-                    key={a.i}
-                    style={{
-                      ...S.assBtn,
-                      outline:       active ? `2px solid ${a.c}` : "none",
-                      outlineOffset: "2px",
-                    }}
-                    onClick={() => setAssignee(a)}
-                    title={a.name}
-                  >
-                    <div style={{ ...S.avatar, background: a.c }}>{a.i}</div>
-                    <span style={{ fontSize: 12, color: "#374151" }}>{a.name}</span>
-                  </button>
-                );
-              })}
-            </div>
+            {projectMembers.length === 0 ? (
+              <p style={{ fontSize: 13, color: "#9ca3af", margin: 0 }}>
+                No members in this project yet.
+              </p>
+            ) : (
+              <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
+                {projectMembers.map((m) => {
+                  const active  = assignedTo === m._id;
+                  const colors  = colorForId(m._id);
+                  const initials = getInitials(m.name || m.email);
+                  return (
+                    <button
+                      key={m._id}
+                      style={{
+                        ...S.assBtn,
+                        outline:       active ? `2px solid ${colors.color}` : "none",
+                        outlineOffset: "2px",
+                      }}
+                      onClick={() => setAssignedTo(m._id)}
+                      title={m.name || m.email}
+                    >
+                      <div style={{ ...S.avatar, background: colors.bg, color: colors.color }}>
+                        {initials}
+                      </div>
+                      <span style={{ fontSize: 12, color: "#374151" }}>{m.name || m.email}</span>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </div>
 
         </div>
